@@ -1,186 +1,267 @@
-* {
-    box-sizing: border-box;
-}
-
- :root {
-    --border: rgb(248, 215, 207) 1px solid;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    line-height: 1.5;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0;
-}
-
-p {
-    margin: 0;
-}
-
-header {
-    position: sticky;
-    top: 0px;
-    /*border: var(--border);*/
-    padding: 0.1%;
-    background-color: #13293d;
-    color: #fff;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    float: right;
-}
-
-nav {}
-
-nav ul {
-    display: flex;
-    min-width: 300px;
-}
-
-nav a {
-    color: #b9c6ae;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 14px;
-}
-
-
-/*nav a:hover {
+        * {
+            box-sizing: border-box;
+        }
+        
+         :root {
+            --border: rgb(248, 215, 207) 1px solid;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            line-height: 1.5;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+        }
+        
+        p {
+            margin: 0;
+        }
+        
+        header {
+            position: sticky;
+            top: 0px;
+            /*border: var(--border);*/
+            padding: 0.1%;
+            background-color: #13293d;
+            color: #fff;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            float: right;
+        }
+        
+        nav {}
+        
+        nav ul {
+            display: flex;
+            min-width: 300px;
+        }
+        
+        nav a {
+            color: #b9c6ae;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 14px;
+        }
+        /*nav a:hover {
             color: #fff;
         }*/
-
-ul {
-    list-style: none;
-}
-
-#person-page h1 {
-    margin-top: 9px;
-    margin-left: 9px;
-    background-color: rgb(88, 4, 81);
-    /*border: var(--border);*/
-    width: fit-content;
-    height: 29px;
-    font-size: 26px;
-}
-
-.hero-banner {
-    /*border: var(--border);*/
-    height: 155px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/sea-montain.jpeg");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: flex-end;
-    align-content: stretch;
-    background-repeat: no-repeat;
-}
-
-#subtitle {
-    border: var(--border);
-    background-color: rgb(99, 217, 178);
-    width: fit-content;
-    margin: 12px;
-}
-
-.vert-line {
-    border-left: 6px solid blue;
-    height: 207px;
-    position: absolute;
-    left: 22%;
-}
-
-.page-wrapper {
-    display: grid;
-    grid-auto-flow: columns;
-    grid-template-rows: min-content max-content min-content;
-    gap: 10px 10px;
-    grid-auto-flow: row;
-    grid-template-areas: "page-section" "page-section" "page-section-contact";
-}
-
-.page-section {
-    border: var(--border);
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-rows: min-content max-content;
-    grid-template-columns: 1fr 3fr;
-}
-
-.page-section-contact {
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-rows: min-content max-content;
-    grid-template-columns: 25% 75%;
-}
-
-.page-wrapper h2 {
-    margin-left: 5px;
-    font-size: 55px;
-    display: flex;
-    justify-content: center;
-}
-
-section.grid {
-    display: grid;
-    grid-template-columns: 25% 75%;
-}
-
-h2 {
-    text-align: center;
-    /*.col-25 {
-    background-color: #ec6666;
-}*/
-    .col-75 {
-        background-color: #9d5252;
+        
+        ul {
+            list-style: none;
+        }
+        
+        #person-page h1 {
+            margin: 9px9px;
+            background-color: rgb(88, 4, 81);
+            /*border: var(--border);*/
+            width: fit-content;
+            height: 29px;
+            font-size: 26px;
+        }
+        
+        .hero-banner {
+            /*border: var(--border);*/
+            height: 155px;
+            width: 100%;
+            margin-bottom: 25px;
+            background-image: url("../images/sea-montain.jpeg");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            align-items: flex-end;
+            align-content: stretch;
+            background-repeat: no-repeat;
+        }
+        
+        #subtitle {
+            border: var(--border);
+            background-color: rgb(99, 217, 178);
+            width: fit-content;
+            margin: 12px;
+        }
+        
+        .vert-line {
+            border-left: 6px solid blue;
+            height: 207px;
+            position: absolute;
+            left: 22%;
+        }
+        
+        .page-wrapper {
+            display: grid;
+            grid-auto-flow: columns;
+            grid-template-rows: min-content max-content min-content;
+            gap: 10px 10px;
+            grid-auto-flow: row;
+            grid-template-areas: "page-section" "page-section" "page-section-contact";
+        }
+        
+        .page-section {
+            border: var(--border);
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-rows: min-content max-content;
+            grid-template-columns: 1fr 3fr;
+        }
+        
+        .page-section-contact {
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-rows: min-content max-content;
+            grid-template-columns: 25% 75%;
+        }
+        
+        .page-wrapper h2 {
+            margin-left: 5px;
+            font-size: 55px;
+            display: flex;
+            justify-content: center;
+        }
+        /*section.grid {
+        display: grid;
+        grid-template-columns: 25% 75%;
     }
-}
-
-hr {
-    border: 1px solid #13293d;
-}
-
-img {
-    width: 100%;
-}
-
-.row {
-    display: flex;
-    justify-content: space-around;
-}
-
-.col-25 {
-    width: 25%;
-}
-
-.col-50 {
-    width: 50%;
-}
-
-#contact-li {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: black;
-}
-
-#contact-li a {
-    color: lightblue;
-    padding-left: 50px;
-    margin-right: 50px;
-    text-decoration: none;
-}
+    
+    h2 {
+        text-align: center;
+        .col-75 {
+            background-color: #9d5252;
+        }
+    }
+    
+    hr {
+        border: 1px solid #13293d;
+    }
+    
+    img {
+        width: 100%;
+    }
+    
+    .row {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .col-25 {
+        width: 25%;
+    }
+    
+    .col-50 {
+        width: 50%;
+    }
+    
+    */
+        /*.categoryGridArea {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 5px;
+            cursor: pointer;
+            display: grid;
+            align-content: end;
+        }
+        
+        .heading {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            height: 25px;
+            color: white;
+            font-size: 18px;
+            border-bottom: 5px solid #FF6200;*/
+        
+        #categoryGrid {
+            margin: 0px 5%;
+            display: grid;
+            grid-template-rows: 600px 300px 300px;
+            grid-template-columns: 1fr 2fr 2fr;
+            grid-template-areas: "emptycases port4-sealife port4-sealife" "emptycases port3-car port1-eatery" "emptycases port5-aquarium port2-web-developer";
+        }
+        
+        #emtycases {
+            display: none;
+            position: absolute;
+            grid-area: bookcases;
+        }
+        
+        #port4-sealife {
+            /*display: flex;
+    position: absolute;*/
+            grid-area: port4-sealife;
+            background-image: url("../images/02-portfolio-4.jpg");
+        }
+        
+        #port3-car {
+            grid-area: port3-car;
+            background-image: url("../images/02-portfolio-3.jpg");
+        }
+        
+        #port1-eatery {
+            grid-area: port1-eatery;
+            background-image: url("../images/jake's-eatery-solution.png");
+        }
+        
+        #port5-aquarium {
+            grid-area: port5-aquarium;
+            background-image: url("../images/aquarium-fish.jpg");
+        }
+        
+        #port2-web-developer {
+            grid-area: port2-web-developer;
+            background-image: url("../images/02-portfolio-2.jpg");
+        }
+        
+        .categoryGridArea {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 5px;
+            cursor: pointer;
+            display: grid;
+            align-content: end;
+        }
+        
+        .heading {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            height: 25px;
+            color: white;
+            font-size: 18px;
+            border-bottom: 5px solid #FF6200;
+        }
+        /*a[href='https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_link']*/
+        
+        #contact-li {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            background-color: black;
+        }
+        
+        #contact-li a {
+            color: lightblue;
+            padding-left: 50px;
+            margin-right: 50px;
+            text-decoration: none;
+        }
+        /*@media only screen and (max-width: 1000px) {
+            #person-page {
+                display: none;
+            }
+            .icons {
+                margin-left: auto;
+            }
+        }*
